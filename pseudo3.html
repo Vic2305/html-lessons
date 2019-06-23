@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>pseudo-3</title>
+    <style>
+        #submenu {
+            opacity: 0;
+            transition: 0.3s
+        }
+
+        #submenu:target {
+            opacity: 1;
+            background-color: thistle
+        }
+
+        ul {
+            margin: 0px;
+            list-style: none;
+            padding: 0px
+        }
+
+        li {
+            /* margin: 10px; */
+            /* height: 20px; */
+            display: block;
+
+        }
+
+        a {
+            margin: 0px;
+            padding: 10px;
+            display: block
+        }
+
+        ul:not(#submenu) {
+            
+            width: 300px;
+            text-align: right;
+
+
+        }
+
+        #settings {
+            background-color: rgb(199, 109, 202);
+            padding: 10px;
+            display: block;
+        }
+
+        span {
+            display: block;
+            width: 6px;
+            float: right;
+            line-height: 7px;
+
+        }
+
+        a:not(#settings) {
+            padding: 16px;
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Dropdown Menu</h1>
+    <ul>
+        <li>
+            <a href="#submenu" id="settings">Setting
+                <span> &#8226; &#8226; &#8226;</span>
+            </a>
+        </li>
+        <ul id="submenu">
+            <li>
+                <a href="#">Account</a>
+            </li>
+            <li>
+                <a href="#">Privacy </a>
+            </li>
+            <li>
+                <a href="#">Reports</a>
+            </li>
+
+        </ul>
+    </ul>
+
+
+</body>
+
+</html>
