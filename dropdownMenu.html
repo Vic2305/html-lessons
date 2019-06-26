@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Learning</title>
+    <style>
+        #dropdownmenu,
+        #dropdownmenu2 {
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        #dropdownmenu:target,
+        #dropdownmenu2:target {
+            opacity: 1;
+        }
+
+        ul {
+            margin: 1px;
+            list-style: none;
+            padding: 2px;
+        }
+
+        li {
+            /*- margin: 10px; */
+            /* height: 20px; */
+            display: block;
+        }
+
+        #dropdownmenu li:nth-child(odd) {
+            background-color: rgb(233, 233, 233);
+            box-shadow: 2px 2px rgb(139, 135, 135);
+        }
+
+        #dropdownmenu li:nth-child(even) {
+            background-color: rgb(202, 199, 199);
+            box-shadow: 2px 2px rgb(139, 135, 135);
+        }
+
+        #dropdownmenu2 li:nth-child(odd) {
+            background-color: #D87F6D;
+            box-shadow: 2px 2px rgb(102, 58, 50);
+        }
+
+        #dropdownmenu2 li:nth-child(even) {
+            background-color: #AD6556;
+            box-shadow: 2px 2px rgb(102, 58, 50);
+        }
+
+        a {
+            margin: 0px;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            color: #111;
+            font-style: normal;
+            font-family: arial;
+        }
+
+        ul:not(#dropdownmenu):not(#dropdownmenu2) {
+            width: 300px;
+            text-align: center;
+        }
+
+        #dropdown1 {
+            padding: 10px;
+            display: block;
+            background-color: rgb(197, 196, 195);
+            border-radius: 6px;
+            box-shadow: 2px 4px rgb(117, 114, 114);
+        }
+
+        #dropdown2 {
+            background-color: #E05036;
+            padding: 10px;
+            display: block;
+            border-radius: 6px;
+            box-shadow: 2px 4px rgb(129, 82, 82);
+        }
+
+        a:not(#dropdown1):not(#dropdown2) {
+            padding: 16px;
+        }
+
+        span {
+            display: block;
+            width: 6px;
+            float: right;
+            margin-right: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <table align="center">
+        <tr>
+            <td align="center">
+                <ul>
+                    <li>
+                        <a href="#dropdownmenu" id="dropdown1">Dropdown 1
+                            <span> &#9660;</span>
+                        </a>
+                    </li>
+                    <ul id="dropdownmenu">
+                        <li>
+                            <a href="#">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 3</a>
+                        </li>
+
+                    </ul>
+                </ul>
+            </td>
+            <td width="100px">
+
+            </td>
+            <td align="center">
+                <ul>
+                    <li>
+                        <a href="#dropdownmenu2" id="dropdown2">Dropdown 2
+                            <span> &#9660;</span>
+                        </a>
+                    </li>
+                    <ul id="dropdownmenu2">
+                        <li>
+                            <a href="#">Item 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Item 3</a>
+                        </li>
+
+                    </ul>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
