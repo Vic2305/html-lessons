@@ -1,1 +1,2 @@
 This is Dmitri's file. Please do not touch.
+This is Addition from Visual Studio Code.
