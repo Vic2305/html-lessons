@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #card {
+            margin: 10px;
+            padding-top: 10px;
+            border-radius: 5px;
+            background-color: #F2F2F2;
+            border: 1px solid grey;
+        }
+
+        .left {
+            display: inline-block;
+            width: 70%;
+        }
+
+        .right {
+            display: inline-block;
+        }
+
+        blockquote::before {
+            content: "<<";
+        }
+
+        blockquote::after {
+            content: ">>";
+        }
+.l1{
+display: inline-block;
+position: absolute;
+
+}
+        h1 {
+            text-align: right;
+        }
+
+        blockquote {
+            text-align: center;
+        }
+
+        p {
+            text-align: right;
+        }
+
+        h2 {}
+    </style>
+</head>
+
+<body>
+
+    <!-- Raspundeti la intrebarea: "Ce rol joaca elementul "blockquote"?" -->
+
+    <div id="card">
+        <div class="left">
+            <h1>Card of wisdom</h1>
+            <blockquote>In your thirst for knowledge, be sure not to drown in all the information.</blockquote>
+            <p><small>Anthony J. D'Angelo</small></p>
+        </div>
+<div class="l1"></div>
+        <div class="right">
+            <!-- Este oare corect sa fie scris simbolul "&" in textul urmatorului rand direct in HTML? -->
+            <h2>Help & Support </h2>
+            <ul>
+                <li><a href="">+123445678</a></li>
+                <li><a href="">email@email.test</a></li>
+                <li><a href="">on the map</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
