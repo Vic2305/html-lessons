@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+
+        }
+
+        #paper {
+            width: 1000px;
+            height: 600px;
+            border: 20px solid white;
+            background-color: #111;
+            position: relative;
+            perspective: 1000px
+        }
+
+        #paper .seg {
+            width: 200px;
+            height: 600px;
+            /* border: 1px solid rgb(202, 91, 91); */
+            position: absolute;
+            top: 0;
+            background-image: url(Foto-effect.jpg);
+
+        }
+#paper .seg:nth-child(2){
+left:174px;
+background-position: -200px 0;
+transform: scale(1.05) rotateY(-30deg);
+
+}
+#paper .seg:nth-child(3){
+    left:355px;
+background-position: -400px 0;
+transform: scale(1.05) rotateY(30deg);
+
+}
+#paper .seg:nth-child(4){
+    left:537px;
+    background-position: -600px 0;
+    transform:scale(1.05) rotateY(-30deg);
+
+}
+#paper .seg:nth-child(5){
+    left:718px;
+    background-position: -800px 0;
+    transform:scale(1.05) rotateY(30deg);
+}
+#paper .seg:nth-child(3) .shadow{
+    width: 200px;
+    height: 600px;
+    /* background-color: rgb(15, 15, 24); */
+background-image: linear-gradient(to left, #000a,#0000)
+}
+#paper .seg:nth-child(4) .shadow{
+    width: 200px;
+    height: 600px;
+    /* background-color: rgb(15, 15, 24); */
+background-image: linear-gradient(to left, #0000,#000a)}
+
+    </style>
+</head>
+<!-- tema pentru acasa- sa coloram alb pentru 2. 7, la fel sa facem hover ca sa se intinda cind luam mouse,
+sa folosim rotate Y cu translate z  --> https://www.google.com/search?q=css+paper+folding&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjSu8zz1bTjAhXdTxUIHdUQBy4Q_AUIECgB&biw=1600&bih=807#imgrc=MYTCeyRzUKuGJM: -->
+<body>
+    <div id="paper">
+        <div class="seg"></div>
+        <div class="seg"></div>
+        <div class="seg">
+            <div class="shadow"></div>
+        </div>
+        <div class="seg">  <div class="shadow"></div></div>
+        <div class="seg"></div>
+    </div>
+</body>
+
+</html>
