@@ -2,113 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Carousel with Layers
-    </title>
-    <style>
-        body {
-            background-color: rgb(160, 145, 145)
-        
-        }
 
-        #carousel {
-            border: 1px dotted green;
-            width: 80%;
-            margin: 10%;
-
-        }
-
-        .slides {
-            display: block;
-        }
-
-        .slide:first-child {
-            width: 30%;
-            text-align: right;
-            padding-top: 50px;
-        }
-
-        .slide:last-child {
-            width: 30%;
-            text-align: left;
-            padding-top: 50px;
-            position: relative;
-            z-index: -1;
-        }
-
-        .slide:nth-child(2) {
-            width: 40%;
-
-        }
-        .slide {
-            float: left;
-        }
-        .img-first {
-            width: 80%;
-            transform: translateX(20%);
-            box-shadow: 0px 0px 1px 1px rgb(107, 84, 175);
-            border-radius: 7px;
-            
-        }
-        .img-last {
-            width: 80%;
-            transform: translateX(-20%);
-            box-shadow: 0px 0px 1px 1px rgb(107, 84, 175);
-            border-radius: 7px;
-
-        }
-
-            .img-second {
-                width: 100%;
-                transform: translateX(0%);
-                box-shadow: 0px 0px 2px 4px rgb(62, 14, 204);
-                border-radius: 7px;
-            }
-.indicators{
-   padding: 200px;
-   text-align: center;
-   color: rgb(12, 12, 10);
-   font-size: 50px;
-   
-}
-a{
-    margin: 20px;
-    text-decoration: none;
-
-}
-a:hover{
-    font-size: 60px;
-    color: rgb(35, 190, 165);
-  
-}
-
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="carousel">
-        <div class="slides">
-            <div class="slide">
-                <img class="img-first" src="images/498-600x300.jpg" alt="some image 1">
-            </div>
-            <div class="slide">
-                <img class="img-second" src="images/498-600x300.jpg" alt="some image 2">
-            </div>
-            <div class="slide">
-                <img class="img-last" src="images/498-600x300.jpg" alt="some image 3">
-            </div>
-        </div>
-    </div>
-    <div class="indicators">
-        <a href="">	&bull;</a>
-        <a href="">	&bull;</a>
-        <a href="">	&bull;</a>
-    </div>
+<nav id="nav-circular">
+    <ul>
+        <li><a href=""><i class="fab fa-500px"></i> 500px</a></li>
+        <li><a href=""><i class="fab fa-accessible-icon"></i> accessible-icon</a></li>
+        <li><a href=""><i class="fab fa-accusoft"></i> accusoft</a></li>
+        <li><a href=""><i class="fab fa-acquisitions-incorporated"></i> acquisitions-incorporated</a></li>
+        <li><a href=""><i class="fas fa-ad"></i> ad</a></li>
+        <li><a href=""><i class="fas fa-address-book"></i> address-book</a></li>
+        <li><a href=""><i class="far fa-address-book"></i> address-book</a></li>
+    </ul>
+</nav>
 
-
-<!-- https://tympanus.net/Development/HoverEffectIdeas/ -->
 
 </body>
 
