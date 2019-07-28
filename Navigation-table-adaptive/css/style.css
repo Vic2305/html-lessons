@@ -1,0 +1,151 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-image: radial-gradient(#00252A, #006B72);
+    background-size: 5px 5px;
+}
+
+.color {
+    color: #000714;
+    color: #005F71;
+    color: #00252A;
+    color: #006B72;
+    color: #00F3F1;
+
+}
+
+#navbar {
+    /* background-color: green; */
+}
+
+.brand {
+    background-color: black;
+    width: calc(1.75*30vh);
+    height: 30vh;
+    position: relative;
+    top: 20vh;
+    left: 5vh;
+    background-color: #000714;
+    border-left: 8px solid transparent;
+    box-sizing: border-box;
+    border-right: 7px double transparent;
+    text-decoration: none;
+    animation:border-flicker 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#navbar .brand::before {
+    content: ".";
+    background-color: rgba(151, 139, 31, 0.333);
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0vh;
+    left: 0vh;
+    transform: rotate(-60deg);
+    background-color: inherit;
+    border-left: 6px double #00F3F1;
+    box-sizing: border-box;
+    border-right: 10px solid #005F71;
+    animation:border-flicker 2s;
+    animation-delay: 3s;
+}
+
+#navbar .brand::after {
+    content: ".";
+    background-color: rgba(151, 139, 31, 0.333);
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0vh;
+    left: 0vh;
+    transform: rotate(60deg);
+    background-color: inherit;
+    border-left: 8px double #006B72;
+    box-sizing: border-box;
+    border-right: 4px solid #00F3F1;
+    animation:border-flicker 2s;
+    animation-delay: 3s;
+}
+
+body::before {
+    background-color: inherit;
+    height: 100vh;
+    width: 100vw;
+    content: "2";
+    display: block;
+    background-image: linear-gradient(#000102a6, #6d83ad77);
+    position: absolute;
+}
+
+#navbar .brand a {
+    z-index: 2;
+    position: absolute;
+    display: block;
+    /* background-color: greenyellow; */
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    line-height: 30vh;
+    text-decoration: none;
+    color: #006B72;
+    font-size: 1.4em;
+    font-weight: 100;
+}
+
+#navbar .brand span {
+    font-weight: 900;
+}
+
+#navbar .brand a img {
+    position: relative;
+    top: 48px;
+}
+
+.nav-main {
+    z-index: 3;
+    position: absolute;
+    display: inline-block;
+
+}
+
+.nav-user {
+    z-index: 3;
+    position: absolute;
+    display: inline-block;
+}
+
+@keyframes border-flicker {
+    0% {
+        border-color: transparent;
+    }
+    5% {
+        border-color: 00F3F1;
+    }
+    10% {
+        border-color: transparent;
+    }
+    15% {
+        border-color: 00F3F1;
+    }
+
+    25% {
+        border-color: #00F3F1;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    75% {
+        border-color: #00F3F1;
+    }
+
+    100% {
+        border-color: #00F3F1;
+    }
+}
