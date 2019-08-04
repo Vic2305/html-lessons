@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#carousel {
+    background-color: rgb(26, 143, 143);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/slide-1-lg.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+/* adaptam background */
+@media (max-width:1000px) {
+    #carousel {
+        background-image: url(../images/lide-2-md.jpg);
+    }
+}
+
+@media (max-width:600px) {
+    #carousel {
+        background-image: url(../images/slide-2-sm.jpg);
+    }
+}
+
+#carousel .slides {
+    width: 80%;
+    /* background-color: blueviolet; */
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #5429;
+    padding-left: 3em;
+
+
+}
+
+#carousel .btl::after {
+    content: "A";
+    width: 70px;
+    height: 3px;
+    background-color: #cee002;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+#carousel .slides h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 0.9em;
+    transform: scaleX(1.2);
+    letter-spacing: -0.05em;
+    transform-origin: left;
+    position: relative;
+    top: 3em;
+
+}
+
+#carousel .slides p {
+    position: relative;
+    letter-spacing: -0.05em;
+    transform: scaleX(1.2);
+    transform-origin: left;
+    top: -4em;
+}
+
+#carousel .active {
+    color: #cee002;
+
+}
+
+#carousel .slide.dark {
+    color: white;
+
+}
+
+.controls {
+    /* background-color: blue; */
+    position: absolute;
+    right: 6%;
+    width: 2%;
+    top: 40%;
+    bottom: 40%;
+    margin: auto;
+}
+
+.controls a {
+    color: white;
+
+}
+
+.controls li {
+    padding-bottom: 80%
+}
+
+@media (max-width:800px) {
+    #carousel .controls {
+        display: none;
+    }
+}
+
+@media (max-width:720px) {
+    #carousel .slides h2 {
+        font-size: 3em;
+    }
+}
+@media (max-height:500px){
+    #carousel .slides p {
+        display: none;
+
+    }
+    #carousel .slides h2 {
+        top: 1em;
+    }
+    #carousel .controls li:first-child, #carousel .controls li:last-child{
+        display: none;
+    }
+}
