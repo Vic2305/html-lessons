@@ -1,0 +1,21 @@
+flexbox- flex - inteligent placement of elements
+-(2017+) !! will be bugs
+*container>items
+*main, cross axis
+*direction(reverse)
+*start/end(left,right, top, bottom..)
+*align(spacing-***)
+*wrap(less space)
+*grow/shrink-proportions
+*column/row
+*uniform Horizontal/ vertical
+*order (z-index)
+
+
+https://flexboxfroggy.com/
+
+
+
+
+grid(table)
+-(2019+) !! will be bugs
